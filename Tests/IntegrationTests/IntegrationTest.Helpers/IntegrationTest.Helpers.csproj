@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <CodeAnalysisRuleSet>../../../TQAnalyzers.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.4.0.15306">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\CT.KeyVault\CT.KeyVault.csproj" />
+    <ProjectReference Include="..\..\..\Core\CT.Storage\CT.Storage.csproj" />
+    <ProjectReference Include="..\..\..\Core\TQ.Core\TQ.Core.csproj" />
+    <ProjectReference Include="..\..\..\Data\TQ.Data.FormEngine\TQ.Data.FormEngine.csproj" />
+    <ProjectReference Include="..\..\..\Data\TQ.Data.PlanningPortal\TQ.Data.PlanningPortal.csproj" />
+    <ProjectReference Include="..\..\..\Portals\Planner\Api.Planner.Core\Api.Planner.Core.csproj" />
+    <ProjectReference Include="..\..\..\Services\Globals\Api.Globals.Core\Api.Globals.Core.csproj" />
+  </ItemGroup>
+</Project>

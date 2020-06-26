@@ -1,0 +1,14 @@
+QsNo,QsVersion,Key,English-England,Welsh-Wales
+76,1,qs_lb_76,Pre-application Advice,Cyngor cyn ymgeisio
+76,1,fld_lb_76_1,Has assistance or prior advice been sought from the local authority about this application?,A ofynnwyd am gymorth neu gyngor blaenorol gan yr awdurdod lleol ynghylch y cais hwn?
+,,,,
+76,1,fld_lb_76_2,Title\t,Teitl
+76,1,fld_lb_76_4,Surname,Cyfenw
+76,1,fld_lb_76_3,First name\t,Enw cyntaf
+76,1,fld_lb_76_5,Reference\t,Cyfeirnod
+76,1,fld_help_76_6,must be pre-application submission,rhaid cyflwyno cais cyn ymgeisio
+76,1,fld_lb_76_6,Date,Dyddiad
+76,1,fld_lb_76_7,Details of the pre-application advice received\t,Manylion y cyngor cyn ymgeisio a dderbyniwyd
+76,1,ans_lbl_76_1_1,Yes,Ydw
+76,1,ans_lbl_76_1_2,No,Na
+77,1,qs_lbl_77,Pre-advise,Pr-advise welsh
